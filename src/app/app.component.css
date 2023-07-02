@@ -1,0 +1,13 @@
+.header{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav > span{
+    padding: 5px;
+}
+
+nav > span:hover{
+    background-color: yellow;
+}
