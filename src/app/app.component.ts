@@ -23,8 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-
-
-//ALTA COCINA TEXTO ANIMACIÓN
-let alta_cocina: string[] = ["Alta cocina"];

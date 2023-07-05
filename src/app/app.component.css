@@ -31,3 +31,7 @@ nav > span{
     padding-bottom: 500px;
     width: 0;
 }
+
+.alta_cocina > .text-1{
+  transform: translate(50px);
+}
