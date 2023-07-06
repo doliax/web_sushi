@@ -32,6 +32,28 @@ nav > span{
     width: 0;
 }
 
-.alta_cocina > .text-1{
-  transform: translate(50px);
+.text2{
+  transform: translate(-50px);
+}
+
+.alta_cocina{
+  background-image: url(../assets/sushi_1.jpg);
+  padding-top: 500px;
+  z-index: 1;
+}
+
+/*Cuando estoy sobre la imagen esta hace la animación*/
+/*DONT WORK*/
+/*.alta_cocina:hover > .text-1{
+  transform: translate(50px, 0);
+  background-color: brown;
+}*/
+
+.text-1:hover, .text-2:hover{
+  z-index: 0;
+}
+
+.text-1{
+
+  transform: translate(50px, 0);
 }
