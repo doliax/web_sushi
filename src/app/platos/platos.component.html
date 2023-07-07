@@ -1,7 +1,11 @@
 <div *ngFor="let item of arr_platos">
     <div *ngIf="item.getTipo == 'maki'">
         <h2>MAKIS</h2>
+        <hr>
         <span>{{item.getNombre}}</span>
+        <span>{{item.getDescripcion}}</span>
+        <span>{{item.getAlergenos}}</span>
+        <span>{{item.getPrecio}}</span>
     </div>
   
 </div>
