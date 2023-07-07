@@ -44,9 +44,6 @@ export class Platos {
       }
 
 
-
-
-
       public get getAlergenos(): string {
         return this.alergenos || "";
       }
