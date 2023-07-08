@@ -2,10 +2,11 @@
   <h1>Sushi Land</h1> 
   <video id="video" src="../assets/sushi.mp4" autoplay loop [muted]="'muted'"></video>
   <nav>
-      <button routerLink="platos">PLATOS</button> <span>RESERVA</span> <span>CONTACTOS</span>
+     <button routerLink="/">INICIO</button> <button routerLink="platos">PLATOS</button> <button>RESERVA</button> <button>CONTACTOS</button>
   </nav>
 </div>
-<router-outlet></router-outlet>
+
+<!--<app-platos></app-platos>-->
 <section class="alta_cocina">
   <div style="display: flex; justify-content: space-between;">
     <span class="text-1">Alta</span>
@@ -13,3 +14,4 @@
     <span class="text-2">Cocina</span> 
   </div>
 </section>
+<router-outlet></router-outlet>

@@ -24,7 +24,12 @@
     z-index: 1; 
   }
 
-
+nav > button{
+  background-color: transparent;
+  border-color: transparent;
+  color:darkblue;
+  font-size: 25px;
+}
 
 nav > span{
     padding: 5px;

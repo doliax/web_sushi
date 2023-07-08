@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Platos } from '../class/platos';
 
+
 @Component({
   selector: 'app-platos',
   templateUrl: './platos.component.html',
@@ -18,7 +19,6 @@ export class PlatosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-   
   }
 
 

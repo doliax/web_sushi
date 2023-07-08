@@ -7,7 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'peluqueria_web';
+  
+  //Creamos nuestra variable header local
+  headerRoot: boolean = true;
+
+  //Desde el contructor importamos el servicio
+  constructor(){}
+
+  ngOnInit(): void {
+  }
 }
+
 
 //Llamamos a la carga de contenido DOM
 document.addEventListener('DOMContentLoaded', () => {
