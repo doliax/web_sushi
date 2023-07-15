@@ -1,12 +1,26 @@
 <div class="sushis" *ngFor="let item of arr_platos">
-    <div class="sushi" *ngIf="item.getTipo == 'maki'">
-        <h2>MAKIS</h2>
+
+    <div class="sushi" *ngIf="item.getTipo == 'entrante'">
+        <h2>Entrantes</h2>
         <hr>
         <div class="sushi-card">
             <p>{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
             <img src={{item.getImg}}>
-            <p>{{item.getAlergenos}}</p>
+            <p>Alergenos: {{item.getAlergenos}}</p>
+            <p>{{item.getPrecio}}€</p>
+        </div>
+    </div>
+
+
+    <div class="sushi" *ngIf="item.getTipo == 'maki'">
+        <h2 *ngIf="title_makis">{{title_makis}}</h2>
+        <hr>
+        <div class="sushi-card">
+            <p>{{item.getNombre}}</p>
+            <p>{{item.getDescripcion}}</p>
+            <img src={{item.getImg}}>
+            <p>Alergenos: {{item.getAlergenos}}</p>
             <p>{{item.getPrecio}}€</p>
         </div>
     </div>
@@ -17,7 +31,7 @@
         <div class="sushi-card">
             <p>{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
-            <p>{{item.getAlergenos}}</p>
+            <p>Alergenos: {{item.getAlergenos}}</p>
             <p>{{item.getPrecio}}€</p>
         </div>
     </div>
@@ -29,7 +43,7 @@
         <div class="sushi-card">
             <p>{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
-            <p>{{item.getAlergenos}}</p>
+            <p>Alergenos: {{item.getAlergenos}}</p>
             <p>{{item.getPrecio}}€</p>
         </div>
     </div>
