@@ -1,4 +1,5 @@
 export class Platos {
+    //Union Types
     private nombre: string | undefined;
     private descripcion: string | undefined;
     private alergenos: string | undefined;

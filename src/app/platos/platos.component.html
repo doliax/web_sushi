@@ -1,11 +1,36 @@
-<div *ngFor="let item of arr_platos">
-    <div *ngIf="item.getTipo == 'maki'">
+<div class="sushis" *ngFor="let item of arr_platos">
+    <div class="sushi" *ngIf="item.getTipo == 'maki'">
         <h2>MAKIS</h2>
         <hr>
-        <p>{{item.getNombre}}</p>
-        <p>{{item.getDescripcion}}</p>
-        <p>{{item.getAlergenos}}</p>
-        <p>{{item.getPrecio}}</p>
+        <div class="sushi-card">
+            <p>{{item.getNombre}}</p>
+            <p>{{item.getDescripcion}}</p>
+            <img src={{item.getImg}}>
+            <p>{{item.getAlergenos}}</p>
+            <p>{{item.getPrecio}}€</p>
+        </div>
+    </div>
+
+    <div *ngIf="item.getTipo == 'temaki'">
+        <h2>TEMAKI</h2>
+        <hr>
+        <div class="sushi-card">
+            <p>{{item.getNombre}}</p>
+            <p>{{item.getDescripcion}}</p>
+            <p>{{item.getAlergenos}}</p>
+            <p>{{item.getPrecio}}€</p>
+        </div>
     </div>
   
+
+    <div *ngIf="item.getTipo == 'nigiri'">
+        <h2>NIGIRI</h2>
+        <hr>
+        <div class="sushi-card">
+            <p>{{item.getNombre}}</p>
+            <p>{{item.getDescripcion}}</p>
+            <p>{{item.getAlergenos}}</p>
+            <p>{{item.getPrecio}}€</p>
+        </div>
+    </div>
 </div>

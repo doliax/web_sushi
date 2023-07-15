@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'peluqueria_web';
+  title = 'sushi_web';
   
   //Creamos nuestra variable header local
   headerRoot: boolean = true;
