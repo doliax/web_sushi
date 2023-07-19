@@ -1,10 +1,11 @@
-<div class="sushis" *ngFor="let item of arr_platos">
-
-    <div class="sushi" *ngIf="item.getTipo == 'entrante'">
+                                                    <!--Que cambie dependiendo del tipo de plato que sea-->
+<div class="sushis" *ngFor="let item of arr_platos" [ngSwitch]="item.getTipo">
+                                                            <!--Si es entrante que utilize esta clase y viceversa-->
+    <div class="sushi" *ngIf="item.getTipo == 'entrante'" >
         <h2>Entrantes</h2>
         <hr>
-        <div class="sushi-card">
-            <p>{{item.getNombre}}</p>
+        <div class="sushi-card" [ngClass]="'entrante'">
+            <p >{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
             <img src={{item.getImg}}>
             <p>Alergenos: {{item.getAlergenos}}</p>
@@ -13,10 +14,10 @@
     </div>
 
 
-    <div class="sushi" *ngIf="item.getTipo == 'maki'">
+    <div class="sushi" *ngIf="item.getTipo == 'maki'" >
         <h2 *ngIf="title_makis">{{title_makis}}</h2>
         <hr>
-        <div class="sushi-card">
+        <div class="sushi-card" [ngClass]="'maki'">
             <p>{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
             <img src={{item.getImg}}>
@@ -25,10 +26,10 @@
         </div>
     </div>
 
-    <div *ngIf="item.getTipo == 'temaki'">
+    <div *ngIf="item.getTipo == 'temaki'" >
         <h2>TEMAKI</h2>
         <hr>
-        <div class="sushi-card">
+        <div class="sushi-card" [ngClass]="'temaki'">
             <p>{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
             <p>Alergenos: {{item.getAlergenos}}</p>
