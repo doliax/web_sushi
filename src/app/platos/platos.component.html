@@ -9,7 +9,7 @@
             <p>{{item.getDescripcion}}</p>
             <img src={{item.getImg}}>
             <p>Alergenos: {{item.getAlergenos}}</p>
-            <p>{{item.getPrecio}}€</p>
+            <p>{{item.getPrecio | currency: 'EUR'}}</p>
         </div>
     </div>
 
@@ -22,7 +22,7 @@
             <p>{{item.getDescripcion}}</p>
             <img src={{item.getImg}}>
             <p>Alergenos: {{item.getAlergenos}}</p>
-            <p>{{item.getPrecio}}€</p>
+            <p>{{item.getPrecio | currency: 'EUR'}}</p>
         </div>
     </div>
 
@@ -33,7 +33,7 @@
             <p>{{item.getNombre}}</p>
             <p>{{item.getDescripcion}}</p>
             <p>Alergenos: {{item.getAlergenos}}</p>
-            <p>{{item.getPrecio}}€</p>
+            <p>{{item.getPrecio | currency: 'EUR'}}</p>
         </div>
     </div>
   
