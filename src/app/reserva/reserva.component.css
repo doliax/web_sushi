@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
-.reservas{
-    list-style-type: none;
+.element_form{
+    padding: 5px;
 }

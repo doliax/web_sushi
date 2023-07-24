@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reserva.component.css']
 })
 export class ReservaComponent implements OnInit {
+
  
   ngOnInit(): void {
    
   }
 }
+  

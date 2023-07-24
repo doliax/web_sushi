@@ -1,18 +1,30 @@
 <div class="container_reserva">
-    <h3>Reserva</h3>
-    <ul class="reservas">
-        <li>
-            Fecha <input type="date">
-        </li>
-        <li>
-            Hora <input type="time">
-        </li>
-        <li>
-            Personas <input type="number" maxlength="10" max="10" [maxLength]="10">
-        </li>
-        <li>
-            Notas <input type="text">
-        </li>
-        <li><input type="button"></li>
-    </ul>
+    <form >
+        <div class="element_form">
+            <label for="fecha">Fecha </label>
+            <br>
+            <input type="date" id="fecha" formControlName="Fecha" required>
+        </div>
+       
+        <div class="element_form">
+            <label for="hora">Hora </label>
+            <br>
+            <input type="time" id="hora" formControlName="Hora" required>
+        </div>
+        
+        <div class="element_form">
+            <label for="personas">Personas </label>
+            <br>
+            <input placeholder="1" type="number" id="personas" formControlName="Personas" required>
+        </div>
+        
+        <div class="element_form">
+            <label for="notas">Notas </label>
+            <br>
+            <input placeholder="Notas" type="text" id="notas" formControlName="Notas" required>
+        </div>
+        <div class="element_form">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
 </div>
