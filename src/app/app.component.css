@@ -47,18 +47,23 @@ nav > span{
   z-index: 1;
 }
 
-/*Cuando estoy sobre la imagen esta hace la animación*/
-/*DONT WORK*/
-/*.alta_cocina:hover > .text-1{
-  transform: translate(50px, 0);
-  background-color: brown;
-}*/
+
 
 .text-1:hover, .text-2:hover{
   z-index: 0;
 }
 
-/*TODO hacer esto | Que el texto vata a la izquiera y el text-2 a la derecha cuando hago scroll*/
-.text-1{
-  transform: translate(50px, 0);
+.text-1 {
+  margin: 0 auto;
+  font-family:Impact;
+  font-size: medium;
+  font-size: 25px;
+}
+
+.text-2 {
+  margin: 0 auto;
+  text-align: center;
+  font-family:Impact;
+  font-size: medium;
+  font-size: 25px;
 }
