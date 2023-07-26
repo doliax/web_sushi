@@ -11,6 +11,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { ContactoComponent } from './contacto/contacto.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     MatNativeDateModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
  
   providers: [MatDatepickerModule],
