@@ -7,6 +7,7 @@ import { PlatosComponent } from './platos/platos.component';
 import { RouterModule } from '@angular/router';
 import { ReservaComponent } from './reserva/reserva.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatNativeDateModule
     
   ],
  
-  providers: [],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

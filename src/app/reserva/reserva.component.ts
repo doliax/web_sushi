@@ -3,13 +3,23 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-reserva',
   templateUrl: './reserva.component.html',
-  styleUrls: ['./reserva.component.css']
+  styleUrls: ['./reserva.component.css'],
 })
 export class ReservaComponent implements OnInit {
 
- 
-  ngOnInit(): void {
-   
+  date: Date;
+  minDate: string;
+  maxDate: string;
+  
+  constructor() {
+    this.date = new Date(Date.now());
+    this.minDate = "2022-07-24";
+    this.maxDate = "2022-07-27";
   }
+
+  ngOnInit() {
+  }
+
+  
 }
   

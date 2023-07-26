@@ -4,7 +4,12 @@
         <div class="element_form">
             <label for="fecha">Fecha </label>
             <br>
-            <input type="date" id="fecha" formControlName="Fecha" required>
+            <input type="date" id="fecha" formControlName="Fecha" [min]="minDate" [max]="maxDate" min="date" required>
+          
+            <!--<input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker  #picker></mat-datepicker> -->
+           
         </div>
        
         <div class="element_form">
