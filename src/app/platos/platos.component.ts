@@ -14,13 +14,14 @@ title_nigiri: string = 'NIGIRIS';
 
 arr_platos: Platos[] = [];
 entrante_1: Platos = new Platos('edamame', 'judias', '', 1.5, '../../assets/edamame.jpg', 'entrante');
-platos: Platos = new Platos('sushi_1', 'Descripcion Estandar', 'sesamo', 2, '../../assets/sushi_card1.jpg', 'maki');
-platos_1_2: Platos = new Platos('sushi_maki_2', 'Descripcion Estandar', 'sesamo', 2, '../../assets/sushi_card1.jpg', 'maki');
-platos2: Platos = new Platos('sushi_2', 'Descripcion Estandar2', 'alga', 1, '', 'temaki');
-platos3: Platos = new Platos('sushi_3', 'Descripcion Estandar2', '', 1, '', 'nigiri');
+platos: Platos = new Platos('Maki Salmon', 'El maki de toda la vida', 'sesamo', 2, '../../assets/sushi_card1.jpg', 'maki');
+platos_1_2: Platos = new Platos('Maki Perca', 'Un maki especial', 'sesamo', 2, '../../assets/sushi_card1.jpg', 'maki');
+platos_1_3_cebollino = new Platos('Maki Cebollino', 'Un maki de verdura','',1, '../../assets/maki_cebollino.png','maki');
+platos2: Platos = new Platos('Temaki Salmon', 'Alga rellena de salmon', 'alga', 1, '../../assets/temaki_1.jpg', 'temaki');
+platos3: Platos = new Platos('Nigiri Salmon', 'Arroz con una lomo de salmón', '', 1, '../../assets/nigiri_1_salmon.jpg', 'nigiri');
 
 constructor() {
-this.arr_platos.push(this.entrante_1, this.platos, this.platos_1_2, this.platos2);
+this.arr_platos.push(this.entrante_1, this.platos, this.platos_1_2, this.platos_1_3_cebollino, this.platos2, this.platos3);
 }
 
 ngOnInit(): void {
