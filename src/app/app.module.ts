@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ReservaComponent } from './reserva/reserva.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDatepickerModule,
-    MatNativeDateModule
-    
+    MatNativeDateModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
  
   providers: [MatDatepickerModule],
