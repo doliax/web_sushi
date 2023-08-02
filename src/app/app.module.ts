@@ -12,7 +12,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { ContactoComponent } from './contacto/contacto.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
  
   providers: [MatDatepickerModule],

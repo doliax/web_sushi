@@ -1,22 +1,28 @@
-<form class="contacto-form">
+<div class="form-container">
     <mat-form-field class="contacto-full-width">
         <!--TODO revisar los labels-->
+        <label>Nombre</label>
+        <br>
         <mat-label>Nombre</mat-label>
         <input matInput>
     </mat-form-field>
 
     <mat-form-field class="contacto-full-width">
+        <label>Email</label>
+        <br>
         <mat-label>Email</mat-label>
-        <input type="email" required>
-    </mat-form-field>
+        <input type="email" name="email" required>
+      </mat-form-field>
 
     <mat-form-field class="contacto-full-width">
+        <label>Tel</label>
+        <br>
         <mat-label>Email</mat-label>
         <input type="tel" required>
     </mat-form-field>
   
     <mat-form-field class="contacto-full-width">
         <mat-label>Mensaje</mat-label>
-        <textarea matInput placeholder="Mensaje"></textarea>
+        <textarea placeholder="Mensaje"></textarea>
     </mat-form-field>
-  </form>
+</div>
