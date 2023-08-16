@@ -68,3 +68,9 @@ nav > span{
   font-size: medium;
   font-size: 25px;
 }
+
+footer{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
