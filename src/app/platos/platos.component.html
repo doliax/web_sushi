@@ -38,24 +38,28 @@
                     </mat-tab>
                     <mat-tab  label="Temaki" >
                         <div class="sushis" *ngFor="let item of arr_platos">
-                        <div class="sushi" *ngIf="item.getTipo == 'temaki'">
+                            <mat-card class="sushi" *ngIf="item.getTipo == 'temaki'">
+                                <mat-card-content>
+                                <p >{{item.getNombre}}</p>
+                                <p>{{item.getDescripcion}}</p>
+                                <img src={{item.getImg}}>
+                                <p>Alergenos: {{item.getAlergenos}}</p>
+                                <p>{{item.getPrecio | currency: 'EUR'}}</p>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </mat-tab>
+                <mat-tab  label="Nigiri" >
+                    <div class="sushis" *ngFor="let item of arr_platos">
+                    <mat-card class="sushi" *ngIf="item.getTipo == 'nigiri'">
+                            <mat-card-content>
                             <p >{{item.getNombre}}</p>
                             <p>{{item.getDescripcion}}</p>
                             <img src={{item.getImg}}>
                             <p>Alergenos: {{item.getAlergenos}}</p>
                             <p>{{item.getPrecio | currency: 'EUR'}}</p>
-                        </div>
-                    </div>
-                </mat-tab>
-                <mat-tab  label="Nigiri" >
-                    <div class="sushis" *ngFor="let item of arr_platos">
-                    <div class="sushi" *ngIf="item.getTipo == 'nigiri'">
-                        <p >{{item.getNombre}}</p>
-                        <p>{{item.getDescripcion}}</p>
-                        <img src={{item.getImg}}>
-                        <p>Alergenos: {{item.getAlergenos}}</p>
-                        <p>{{item.getPrecio | currency: 'EUR'}}</p>
-                    </div>
+                        </mat-card-content>
+                    </mat-card>
                 </div>
             </mat-tab>
                           </mat-tab-group>
