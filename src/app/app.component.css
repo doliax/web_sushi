@@ -5,6 +5,7 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 1200px;
+    font-size: 55px;
   }
   
   .header video {
@@ -27,8 +28,8 @@
 nav > button{
   background-color: transparent;
   border-color: transparent;
-  color:darkblue;
-  font-size: 25px;
+  color:black;
+  font-size: 45px;
 }
 
 nav > span{
@@ -43,7 +44,7 @@ nav > span{
 
 .alta_cocina{
   background-image: url(../assets/sushi_1.jpg);
-  padding-top: 500px;
+  padding-top: 200px;
   z-index: 1;
 }
 

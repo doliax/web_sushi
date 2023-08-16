@@ -1,36 +1,34 @@
 <h2 class="reserva_titulo">Reserva</h2>
 <div class="container_reserva">
-    <form>
-        <div class="element_form">
-            <label for="fecha">Fecha </label>
-            <br>
-            <input type="date" id="fecha" formControlName="Fecha" [min]="minDate" [max]="maxDate" min="date" required>
-          
-            <!--<input matInput [matDatepicker]="picker">
-            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker  #picker></mat-datepicker> -->
-           
-        </div>
-       
-        <div class="element_form">
-            <label for="hora">Hora </label>
-            <br>
-            <input type="time" id="hora" formControlName="Hora" required>
-        </div>
-        
-        <div class="element_form">
-            <label for="personas">Personas </label>
-            <br>
-            <input placeholder="1" type="number" id="personas" formControlName="Personas" max="10" required>
-        </div>
-        
-        <div class="element_form">
-            <label for="notas">Notas </label>
-            <br>
-            <input placeholder="Notas" type="text" id="notas" formControlName="Notas">
-        </div>
-        <div class="element_form">
-            <button type="submit" (click)="doReserva()">Enviar</button>
-        </div>
-    </form>
+    <!--Form con nombre y submit-->
+  <form [formGroup]="form" (ngSubmit)="doReserva()">
+    <div class="element_form">
+      <label for="fecha">Fecha </label>
+      <br>
+      <input type="date" id="fecha" formControlName="fecha" [min]="minDate" [max]="maxDate" required>
+    </div>
+
+    <div class="element_form">
+      <label for="hora">Hora </label>
+      <br>
+      <input type="time" id="hora" formControlName="hora" required>
+    </div>
+
+    <div class="element_form">
+      <label for="personas">Personas </label>
+      <br>
+      <input placeholder="1" type="number" id="personas" formControlName="personas" required>
+    </div>
+
+    <div class="element_form">
+      <label for="notas">Notas </label>
+      <br>
+      <input placeholder="Notas" type="text" id="notas" formControlName="notas">
+    </div>
+
+    <div class="element_form">
+        <!--Al hacer click se enviara al form-->
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
 </div>
