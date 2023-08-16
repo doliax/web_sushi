@@ -46,6 +46,8 @@ nav > span{
   background-image: url(../assets/sushi_1.jpg);
   padding-top: 200px;
   z-index: 1;
+  /*Posiciono la imagen de un modo que se vea más o menos simetrico*/
+  background-position: right 60px center; 
 }
 
 
