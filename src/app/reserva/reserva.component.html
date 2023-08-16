@@ -27,10 +27,10 @@
         <div class="element_form">
             <label for="notas">Notas </label>
             <br>
-            <input placeholder="Notas" type="text" id="notas" formControlName="Notas" required>
+            <input placeholder="Notas" type="text" id="notas" formControlName="Notas">
         </div>
         <div class="element_form">
-            <button type="submit">Enviar</button>
+            <button type="submit" (click)="doReserva()">Enviar</button>
         </div>
     </form>
 </div>

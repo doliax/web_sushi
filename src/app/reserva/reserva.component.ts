@@ -20,6 +20,10 @@ export class ReservaComponent implements OnInit {
   ngOnInit() {
   }
 
+  doReserva(){
+    alert("Reserva hecha correctamente");
+  }
+
   
 }
   

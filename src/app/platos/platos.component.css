@@ -39,3 +39,8 @@ img{
     width: 10%;
     margin: 0 auto;
 }
+
+mat-card-content:hover{
+    /*Anchura de 11 pixeles y transición de gris con 20% de opacidad*/
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
