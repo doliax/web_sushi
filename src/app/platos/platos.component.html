@@ -1,9 +1,11 @@
                          
                          
-                         <mat-tab-group>
+                      
+                       <mat-tab-group>
                             <mat-tab label="Entrante" >
                                
                                 <div class="sushis" *ngFor="let item of arr_platos">
+                                    <ng-container *ngIf="1 == 1">
                                     <mat-card class="sushi" *ngIf="item.getTipo == 'entrante'">
                                         <mat-card-content>
                                             <p >{{item.getNombre}}</p>
@@ -13,8 +15,10 @@
                                     <p>{{item.getPrecio | currency: 'EUR'}}</p>
                                         </mat-card-content>
                                       </mat-card>
+                                    </ng-container>
                             </div>
                         </mat-tab>
+
                         <mat-tab  label="Maki" >
                             <div class="sushis" *ngFor="let item of arr_platos">
                                 <mat-card class="sushi" *ngIf="item.getTipo == 'maki'">
@@ -28,6 +32,7 @@
                                   </mat-card>
                         </div>
                     </mat-tab>
+
                     <mat-tab  label="Temaki" >
                         <div class="sushis" *ngFor="let item of arr_platos">
                             <mat-card class="sushi" *ngIf="item.getTipo == 'temaki'">
@@ -41,6 +46,7 @@
                         </mat-card>
                     </div>
                 </mat-tab>
+
                 <mat-tab  label="Nigiri" >
                     <div class="sushis" *ngFor="let item of arr_platos">
                     <mat-card class="sushi" *ngIf="item.getTipo == 'nigiri'">

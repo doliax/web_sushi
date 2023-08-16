@@ -4,7 +4,8 @@ import { Platos } from '../class/platos';
 @Component({
 selector: 'app-platos',
 templateUrl: './platos.component.html',
-styleUrls: ['./platos.component.css']
+styleUrls: ['./platos.component.css'],
+
 })
 export class PlatosComponent implements OnInit {
 

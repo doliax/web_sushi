@@ -23,7 +23,7 @@ img {
   }
   
 
-.maki{
+/*.maki{
     background-color: aqua;
 }
 
@@ -33,7 +33,7 @@ img {
 
 .entrante{
     background-color: brown;
-}
+}*/
 
 .sushi {
     width: 10%;
@@ -44,3 +44,5 @@ mat-card-content:hover{
     /*Anchura de 11 pixeles y transición de gris con 20% de opacidad*/
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+
+/*ng-start-inserted -> Esta clase se pone en medio de entrantes*/ 
