@@ -1,16 +1,18 @@
-.contacto-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .contacto-full-width {
-    width: 100%;
+.contacto-form, h2 {
+  text-align: center;
   }
 
-  /*TODO alinear el form*/
-.form-container{
-  
-}  
-  
-  
+  form > div {
+    margin-bottom: 20px;
+  }
+
+
+  .contacto-form label {
+    margin-bottom: 0;
+  }
+
+.container_reserva{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
