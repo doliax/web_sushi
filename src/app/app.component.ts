@@ -18,18 +18,20 @@ export class AppComponent {
   }
 }
 
+//V2 - Correción para que video deje de ser null y el testing de Jasmine no de error
 
-//Llamamos a la carga de contenido DOM
 document.addEventListener('DOMContentLoaded', () => {
   //Variable de id video como un video de html
   const video = document.getElementById('video') as HTMLVideoElement;
   //Añadimos evento de actualizador de tiempo con funcion flecha que comprueba el timpo de video, si sobrepasa de 40 se reinicia
+  if (video) {
   video.addEventListener('timeupdate', () => {
-    if (video.currentTime >= 40) {
-      //Tiempo 0 para reiniciarlo
-      video.currentTime = 0; 
-      //Carga de video
-      video.load(); 
-    }
+  if (video.currentTime >= 40) {
+  //Tiempo 0 para reiniciarlo
+  video.currentTime = 0;
+  //Carga de video
+  video.load();
+  }
   });
-});
+  }
+  });
