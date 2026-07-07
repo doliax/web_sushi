@@ -1,18 +1,21 @@
 import { ReservaComponent } from './reserva.component';
 import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { AppModule } from '../app.module';
 
 
 
 describe('ReservaComponent', () => {
-  
+
   //El ComponentFixture es una instancia de un componente que se puede utilizar para realizar pruebas en la vista y el comportamiento del componente.
                                 //<> = Tipo generico de en este caso ReservaComponent
   let fixture: ComponentFixture<ReservaComponent>;
   let component: ReservaComponent;
 
   //Se ejecuta antes del testeo
-  beforeEach(() => {
-    //El TestBed es una clase que proporciona métodos para crear componentes y servicios para pruebas unitarias. 
+  beforeEach(async () => {
+    //El TestBed es una clase que proporciona métodos para crear componentes y servicios para pruebas unitarias.
+    //Desde Angular 19 el componente debe declararse vía su módulo para que el template resuelva [formGroup].
+    await TestBed.configureTestingModule({ imports: [AppModule] }).compileComponents();
     fixture = TestBed.createComponent(ReservaComponent);
     component = fixture.componentInstance;
     component.ngOnInit();

@@ -1,21 +1,13 @@
 # Security Policy
 
-## Supported Versions
+## Versiones soportadas
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Este proyecto se distribuye desde la rama `main`, que es la única que recibe
+correcciones de seguridad (dependencias y código).
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Cómo reportar una vulnerabilidad
 
-## Reporting a Vulnerability
+Usa el aviso privado de GitHub: **Security → Advisories → "Report a vulnerability"**
+en https://github.com/doliax/web_sushi/security/advisories/new.
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Por favor, no abras issues públicas con detalles explotables.

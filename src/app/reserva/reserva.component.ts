@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
+  standalone: false,
   selector: 'app-reserva',
   templateUrl: './reserva.component.html',
   styleUrls: ['./reserva.component.css'],

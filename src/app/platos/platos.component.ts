@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platos } from '../class/platos';
 
 @Component({
+  standalone: false,
 selector: 'app-platos',
 templateUrl: './platos.component.html',
 styleUrls: ['./platos.component.css'],
